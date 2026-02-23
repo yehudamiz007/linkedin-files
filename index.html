@@ -298,8 +298,8 @@ body {
 /* Animated flow dots */
 .flow-dot {
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   z-index: 8;
 }
@@ -378,13 +378,16 @@ body {
 
 .flow3c {
   background: #10b981;
-  box-shadow: 0 0 10px #10b981;
-  animation: flow3c 2.5s ease-in-out infinite 2.1s;
+  box-shadow: 0 0 15px #10b981, 0 0 30px #10b981;
+  width: 8px !important;
+  height: 8px !important;
+  animation: flow3c 3s ease-in-out infinite 0.3s;
 }
 @keyframes flow3c {
-  0% { top: 450px; left: 715px; opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
+  0% { top: 452px; left: 715px; opacity: 0; }
+  15% { opacity: 1; }
+  50% { top: 380px; left: 800px; opacity: 1; }
+  85% { opacity: 1; }
   100% { top: 320px; left: 900px; opacity: 0; }
 }
 
